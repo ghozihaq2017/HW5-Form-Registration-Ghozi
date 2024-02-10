@@ -1,4 +1,4 @@
-// Pindah Tab
+// Change Tab
 const formBansosContainer = document.getElementById('form-bansos');
 const dataBansosContainer = document.getElementById('data-bansos');
 const tabRegist = document.getElementById('tab-regist');
@@ -18,61 +18,7 @@ const onData = () => {
   tabRegist.classList.remove('tab-active');
 };
 
-// testt oop
-
-// class Registrant {
-//   constructor(name, age, money) {
-//     this.name = name;
-//     this.age = age;
-//     this.money = money;
-//   }
-
-//   sayHello(nama) {
-//     console.info(
-//       `Heloo ${nama}!, may name is ${this.name} and i was ${this.age} years old, and i have ${this.money} Rupiah `,
-//     );
-//   }
-// }
-
-// const pikachu = new Registrant('Pika', 11, 34000);
-
-// console.log(pikachu);
-
-// class Bansoser extends Registrant {}
-
-// // asli nihh
-// class Applicant {
-//   constructor(name, age, salary) {
-//     this.name = name;
-//     this.age = age;
-//     this.salary = salary;
-//   }
-// }
-
-// class ListApplicant {
-//   constructor() {
-//     this.dataApplicants = [];
-//   }
-
-//   addApplicant(name, age, salary) {
-//     const applicant = new Applicant(name, age, salary);
-//     this.dataApplicants.push(applicant);
-//   }
-
-//   displayData() {
-//     const listTable = document.getElementById('list-table');
-//     listTable.innerHTML = '';
-
-//     for (const applicant of this.dataApplicants) {
-//       const row = listTable.insertRow();
-//       row.innerHTML = `<td>${applicant.name}</td><td>${applicant.age} Years Old</td><td>Rp. ${applicant.salary}</td>`;
-//     }
-//   }
-
-//   avarege() {
-
-//   }
-// }
+// Form Action
 
 window.onload = (event) => {
   console.log('Page is fully loaded');
