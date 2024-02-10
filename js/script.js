@@ -114,6 +114,16 @@ window.onload = (event) => {
       const newApplicant = new Applicant(nameValue, ageValue, salaryValue);
       dataApplicants.push(newApplicant);
       displayData();
+
+      // Notifikasi telah ditambahkan
+      alert(
+        'Registration data has been added: \nName: ' +
+          nameValue +
+          '\nAge: ' +
+          ageValue +
+          '\nSalary: ' +
+          salaryValue,
+      );
     }, 3000);
 
     nameInput.value = '';

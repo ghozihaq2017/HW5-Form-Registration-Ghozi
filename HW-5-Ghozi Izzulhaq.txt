@@ -1,0 +1,8 @@
+Nama : Ghozi Izzulhaq
+Kelas: Fullstack Web Dev Batch 6
+
+1. Link Repository
+https://github.com/ghozihaq2017/HW5-Form-Registration-Ghozi
+
+2. Link Website
+https://ghozihaq2017.github.io/HW5-Form-Registration-Ghozi/
