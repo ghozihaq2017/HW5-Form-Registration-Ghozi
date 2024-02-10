@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Locale -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- CDN Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form Registration</title>
+  </head>
+  <body class="bg-[#ee4d2d]">
+    <div class="container mx-auto my-auto text-black bg-[url('./assets/img/pattern2.png')]">
+      <div class="relative flex flex-col justify-center h-screen overflow-hidden">
+        <div class="w-full min-h-[75%] p-6 mx-auto bg-white rounded-md shadow-xl lg:max-w-xl">
+          <div role="tablist" class="tabs tabs-lifted">
+            <a
+              role="tab"
+              id="tab-regist"
+              onclick="onRegist()"
+              class="tab tab-active [--tab-bg:#f3826c] [--tab-border-color:#ee4d2d] text-stone-700"
+              >Register</a
+            >
+            <a
+              role="tab"
+              id="tab-list"
+              onclick="onData()"
+              class="tab text-stone-700 [--tab-bg:#f3826c] [--tab-border-color:#ee4d2d]"
+              >List Applicant</a
+            >
+          </div>
+          <div id="form-bansos">
+            <h1 class="text-3xl font-semibold text-center text-stone-700 mt-10">Form Subsidy</h1>
+            <form class="space-y-4">
+              <div>
+                <label class="label">
+                  <span class="text-base label-text text-stone-700">Name</span>
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  class="w-full input input-bordered input-primary bg-white"
+                />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="text-base label-text text-stone-700">Age</span>
+                </label>
+                <input
+                  id="age"
+                  type="number"
+                  placeholder="Age"
+                  class="w-full input input-bordered input-primary bg-white"
+                />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="text-base label-text text-stone-700">Salary</span>
+                </label>
+                <input
+                  id="salary"
+                  type="number"
+                  placeholder="salary"
+                  class="w-full input input-bordered input-primary bg-white"
+                />
+              </div>
+              <div>
+                <button
+                  value="submit"
+                  id="submit"
+                  type="submit"
+                  class="btn btn-block bg-[#ee4d2d] hover:bg-[#f3826c] border-none text-white mt-5"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="hidden" id="data-bansos">
+            <h1 class="text-3xl font-semibold text-center text-stone-700 mt-10">
+              Salary Applicant
+            </h1>
+            <p class="my-5" id="average">
+              The average registrant has a salary of 700000.00 with an average age of 128.00
+            </p>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr class="font-bold text-base text-stone-700">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                  </tr>
+                </thead>
+                <tbody id="list-table"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      class="modal-container fixed z-10 top-0 left-0 w-full h-full overscroll-auto bg-[rgba(0,0,0,0.4)]"
+    >
+      <div class="modal-box mx-auto">
+        <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">This modal works with anchor links</p>
+        <div class="modal-action">
+          <a href="#" class="btn">Yay!</a>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
